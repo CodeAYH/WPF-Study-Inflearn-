@@ -1,0 +1,30 @@
+﻿<Window x:Class="ch7_Image.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ch7_Image"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <Image
+                x:Name="img"
+                MouseEnter="img_MouseEnter"
+                MouseLeave="img_MouseLeave"
+                Source="https://cdn3.iconfinder.com/data/icons/unigrid-phantom-science-vol-1/60/003_019_robot_artificial_intelligence_ai_science-256.png" 
+                   Width="100"></Image>
+            <Button Width="30">
+                <ContentControl>
+                    <StackPanel>
+                        <Image Source="https://cdn3.iconfinder.com/data/icons/unigrid-phantom-science-vol-1/60/003_019_robot_artificial_intelligence_ai_science-256.png"
+                               HorizontalAlignment="Center"
+                               Width="30"/>
+                        <TextBlock Text="로봇" 
+                                   HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </ContentControl>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>

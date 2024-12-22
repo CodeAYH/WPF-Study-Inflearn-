@@ -1,0 +1,38 @@
+﻿<Window x:Class="ch13_Expander.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ch13_Expander"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <Expander Header="Expand"
+                      Expanded="Expander_Expanded">
+                <StackPanel>
+                    <TextBlock>
+                        텍스트블록
+                    </TextBlock>
+                    <Button>버튼</Button>
+                </StackPanel>
+            </Expander>
+            <Expander>
+                <Expander.Header>
+                    <WrapPanel>
+                        <Image 
+                           Source="https://cdn3.iconfinder.com/data/icons/education-209/64/apple-fruit-science-school-256.png"
+                           Width="30" />
+                        <TextBlock VerticalAlignment="Center">확장2</TextBlock>
+                    </WrapPanel>
+                </Expander.Header>
+                <WrapPanel>
+                <TextBlock>
+                    텟스트블록
+                </TextBlock>
+                <Button>버튼</Button>
+                </WrapPanel>
+            </Expander>
+        </StackPanel>
+    </Grid>
+</Window>
